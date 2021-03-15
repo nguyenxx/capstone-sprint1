@@ -11,7 +11,7 @@
   }
   
   .bg-image {
-    background-image: url('../images/login.jpeg');
+    background-image: url('../images/login-withlogo.png');
     background-size: cover;
     background-position: center;
   }
