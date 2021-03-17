@@ -155,6 +155,22 @@
   padding-left: 3rem;
 }
 
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #266141;
+}
+
+a:hover {
+    color: #338458;
+    text-decoration: underline;
+}
+
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -183,3 +199,17 @@ h5 {
   padding: 1rem 0 1rem 0;
   margin-left: 3rem;
  }
+
+ .dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #DBAA00;
+}
+
+path {
+    color: #266141;
+}
+
+#card-spacer {
+  margin-bottom: 3rem;
+}

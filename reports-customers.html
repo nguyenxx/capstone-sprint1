@@ -10,6 +10,7 @@
 <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/logo-favicon.png">
 
 </head>
 
@@ -39,7 +40,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false" style="color: white;"> Reports <i class="fa fa-shopping-cart"></i></a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="reports-customers.html">
+                <a class="dropdown-item active" href="reports-customers.html">
                   View Customers
                 </a>
                 <a class="dropdown-item" href="#">
@@ -85,63 +86,93 @@
     </form>
 
     <div class="row" id="customer-cards">
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-4" id="card-spacer">
               <div class="card">
-                <img class="card-img-top" src="images/placeholder.png" alt="Placeholder.">
+                <img class="card-img-top" src="images/client-1-photo.png" alt="Placeholder.">
                 <div class="card-body">
-                  <h5 class="card-title">Customer Name</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ex ac ipsum pulvinar interdum. Maecenas euismod augue nisi, non fermentum lectus pretium nec. Suspendisse quis sem velit.</p>
-                  <a href="cart.html" class="btn btn-primary">Quick View</a> <a href="cart.html" class="btn btn-light">Full Report</a>
+                  <h5 class="card-title">Dan Johnson</h5>
+                  <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg> &nbsp; <a href="mailto:#">danjohn@gmail.com</a></p>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg> &nbsp; <a href="tel:#">(703) 798-4564</a></p>
+                  <a href="#" class="btn btn-primary">View Report</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4">
               <div class="card">
-                <img class="card-img-top" src="images/placeholder.png" alt="Placeholder.">
+                <img class="card-img-top" src="images/client-2-photo.png" alt="Placeholder.">
                 <div class="card-body">
-                  <h5 class="card-title">Customer Name</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ex ac ipsum pulvinar interdum. Maecenas euismod augue nisi, non fermentum lectus pretium nec. Suspendisse quis sem velit.</p>
-                  <a href="cart.html" class="btn btn-primary">Quick View</a> <a href="cart.html" class="btn btn-light">Full Report</a>
+                  <h5 class="card-title">Jane Doe</h5>
+                  <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg> &nbsp; <a href="mailto:#">janedoe@gmail.com</a></p>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg> &nbsp; <a href="tel:#">(123) 456-7890</a></p>
+                  <a href="#" class="btn btn-primary">View Report</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4">
               <div class="card">
-                <img class="card-img-top" src="images/placeholder.png" alt="Placeholder.">
+                <img class="card-img-top" src="images/client-3-photo.png" alt="Placeholder.">
                 <div class="card-body">
-                  <h5 class="card-title">Customer Name</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ex ac ipsum pulvinar interdum. Maecenas euismod augue nisi, non fermentum lectus pretium nec. Suspendisse quis sem velit.</p>
-                  <a href="cart.html" class="btn btn-primary">Quick View</a> <a href="cart.html" class="btn btn-light">Full Report</a>
+                  <h5 class="card-title">Ed Smalls</h5>
+                  <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg> &nbsp; <a href="mailto:#">edsmalls@gmail.com</a></p>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg> &nbsp; <a href="tel:#">(434) 114-0934</a></p>
+                  <a href="#" class="btn btn-primary">View Report</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4">
               <div class="card">
-                <img class="card-img-top" src="images/placeholder.png" alt="Placeholder.">
+                <img class="card-img-top" src="images/client-4-photo.png" alt="Placeholder.">
                 <div class="card-body">
-                  <h5 class="card-title">Customer Name</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ex ac ipsum pulvinar interdum. Maecenas euismod augue nisi, non fermentum lectus pretium nec. Suspendisse quis sem velit.</p>
-                  <a href="cart.html" class="btn btn-primary">Quick View</a> <a href="cart.html" class="btn btn-light">Full Report</a>
+                  <h5 class="card-title">Sam Mills</h5>
+                  <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg> &nbsp; <a href="mailto:#">sammills@gmail.com</a></p>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg> &nbsp; <a href="tel:#">(111) 222-3334</a></p>
+                  <a href="#" class="btn btn-primary">View Report</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4">
               <div class="card">
-                <img class="card-img-top" src="images/placeholder.png" alt="Placeholder.">
+                <img class="card-img-top" src="images/client-5-photo.png" alt="Placeholder.">
                 <div class="card-body">
-                  <h5 class="card-title">Customer Name</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ex ac ipsum pulvinar interdum. Maecenas euismod augue nisi, non fermentum lectus pretium nec. Suspendisse quis sem velit.</p>
-                  <a href="cart.html" class="btn btn-primary">Quick View</a> <a href="cart.html" class="btn btn-light">Full Report</a>
+                  <h5 class="card-title">Rob Smith</h5>
+                  <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg> &nbsp; <a href="mailto:#">robsmith@gmail.com</a></p>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg> &nbsp; <a href="tel:#">(757) 324-1232</a></p>
+                  <a href="#" class="btn btn-primary">View Report</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4">
               <div class="card">
-                <img class="card-img-top" src="images/placeholder.png" alt="Placeholder.">
+                <img class="card-img-top" src="images/client-6-photo.png" alt="Placeholder.">
                 <div class="card-body">
-                  <h5 class="card-title">Customer Name</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ex ac ipsum pulvinar interdum. Maecenas euismod augue nisi, non fermentum lectus pretium nec. Suspendisse quis sem velit.</p>
-                  <a href="cart.html" class="btn btn-primary">Quick View</a> <a href="cart.html" class="btn btn-light">Full Report</a>
+                  <h5 class="card-title">Anna White</h5>
+                  <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg> &nbsp; <a href="mailto:#">annawhite@gmail.com</a></p>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg> &nbsp; <a href="tel:#">(703) 384-9201</a></p>
+                  <a href="#" class="btn btn-primary">View Report</a>
                 </div>
               </div>
             </div>
