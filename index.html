@@ -1,24 +1,43 @@
 <!doctype html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insert Title Here</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Valley - Dashboard</title>
 
-    <!-- Bootstrap v4 -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="images/logo-favicon.png">
+<!-- Bootstrap v4 -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/logo-favicon.png">
+<style>
+  .active-nav {
+    text-decoration: underline;
+  }
 
+  body {
+    background-color: whitesmoke;
+  }
+
+  .card {
+    border: none;
+    border-radius: 0%;
+  }
+
+  .client-img {
+    width: 60px;
+    height: 60px;
+  }
+
+</style>
 </head>
 
-<div class="container-fluid">
-    <!-- INSERT HTML PAGE CONTENT HERE -->
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<body>
+
+<!-- INSERT HTML PAGE CONTENT HERE -->
+<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="images/GVA_MLogo__reverse.png" class="img-logo" alt="logo"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -28,7 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html" style="color: white;">Home</a>
+              <a class="nav-link js-scroll-trigger active-nav" href="index.html" style="color: white;">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#" style="color: white;">Create New Client</a>
@@ -40,7 +59,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false" style="color: white;"> Reports <i class="fa fa-shopping-cart"></i></a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="reports-customers.html">
+                <a class="dropdown-item active" href="reports-customers.html">
                   View Customers
                 </a>
                 <a class="dropdown-item" href="#">
@@ -74,14 +93,187 @@
       </div>
     </nav>
 
-    <div class="row">
-        <div class="container col-lg-4">
-            <h1 style="padding-bottom: 40px;">hu</h1>
-            <img src="images/IMG_1256.jpeg" class="img-fluid" alt="Responsive image">
+    <div class="row" id="customer-cards" style="padding-top: 11rem;">
+            <div class="col-sm-3 col-md-3 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-body">
+                  <div>
+                    <h4>Welcome to your Dashboard, Sally.</h4>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                
+                  <p class="card-text" style="margin-bottom: 0; width: 100%;">Tuesday</p>
+                  <p class="card-text">March 16, 2021</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-9 col-md-9">
+              <div class="card">
+                <div class="card-body">
+                  <h4 style="padding-bottom: 5px;">Tickets</h4>
+                  <table class="table table-bordered" style="margin-bottom: 0;">
+                    <thead>
+                      <tr>
+                        <th scope="col">Ticket Number</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Service Type</th>
+                        <th scope="col">Deadline End</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">#1342</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>Auction with Move</td>
+                        <td>4/1/2021 01:00 PM</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">#1243</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Auction with Move</td>
+                        <td>4/1/2021 12:00 PM</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">#6543</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Auction without Move</td>
+                        <td>3/22/2021 11:00 PM</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+    </div> <!-- end row sections -->
+
+    <div class="row" id="customer-cards">
+      <div class="col-sm-6 col-md-6" id="card-spacer">
+        <div class="card">
+          <div class="card-body">
+            <h4 style="padding-bottom: 5px;">Clients</h4>
+
+            <div class="row" style="display: flex; flex-direction: row; align-items: center; padding-bottom: 18px;">
+              <div class="col-sm-4 col-md-3">  
+                <img src="images/client-1-circle.png" class="rounded client-img" alt="client-1">
+              </div>
+              <div class="col-sm-4 col-md-3">  
+               <p><b>Dan Johnson</b></p>
+              </div>
+              <div class="col-sm-4 col-md-3">  
+                <p style="color: #266141;">(757)443-8261</p>
+              </div>
+              <div class="col-sm-4 col-md-3">  
+                <p style="color: #266141;">dan@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="row" style="display: flex; flex-direction: row; align-items: center; padding-bottom: 18px;">
+              <div class="col-sm-4 col-md-3">  
+                <img src="images/client-2-circle.jpg" class="rounded client-img" alt="client-1">
+              </div>
+              <div class="col-sm-4 col-md-3">  
+               <p><b>John Doe</b></p>
+              </div>
+              <div class="col-sm-4 col-md-3">  
+                <p style="color: #266141;">(701)443-8861</p>
+              </div>
+              <div class="col-sm-4 col-md-3">  
+                <p style="color: #266141;">jdoe@gmail.com</p>
+              </div>
+            </div>
+     
+            <div class="row" style="display: flex; flex-direction: row; align-items: center; padding-bottom: 18px;">
+              <div class="col-sm-4 col-md-3">  
+                <img src="images/client-3-circle.jpg" class="rounded client-img" alt="client-1">
+              </div>
+              <div class="col-sm-4 col-md-3">  
+               <p><b>Jane Doe</b></p>
+              </div>
+              <div class="col-sm-4 col-md-3">  
+                <p style="color: #266141;">(123)456-789</p>
+              </div>
+              <div class="col-sm-4 col-md-3">  
+                <p style="color: #266141;">jane@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="row" style="display: flex; flex-direction: row; align-items: center;">
+              <div class="col-sm-4 col-md-3">  
+                <img src="images/client-4-circle.jpg" class="rounded client-img" alt="client-1">
+              </div>
+              <div class="col-sm-4 col-md-3">  
+               <p><b>Ed Smalls</b></p>
+              </div>
+              <div class="col-sm-4 col-md-3">  
+                <p style="color: #266141;">(453)432-8796</p>
+              </div>
+              <div class="col-sm-4 col-md-3">  
+                <p style="color: #266141;">ed@gmail.com</p>
+              </div>
+            </div>
+     
+  
+          </div>
         </div>
-        <div class="container col-lg-8">
+      </div>
+
+      <div class="col-sm-6 col-md-6" id="card-spacer">
+        <div class="card">
+          <div class="card-body">
+            <h4 style="padding-bottom: 5px;">Tickets</h4>
+            <table class="table table-bordered" style="margin-bottom: 0;">
+              <thead>
+                <tr>
+                  <th scope="col">Ticket Number</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Service Type</th>
+                  <th scope="col">Deadline End</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">#1342</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>Auction with Move</td>
+                  <td>4/1/2021 01:00 PM</td>
+                </tr>
+                <tr>
+                  <th scope="row">#1243</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>Auction with Move</td>
+                  <td>4/1/2021 12:00 PM</td>
+                </tr>
+                <tr>
+                  <th scope="row">#6543</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>Auction without Move</td>
+                  <td>3/22/2021 11:00 PM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </div>
 
     </div>
-</div>
 
+<!-- jQuery and Bootstrap links - do not delete! -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- end of do not delete -->
+</body>
+</html>
