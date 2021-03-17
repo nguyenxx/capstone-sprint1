@@ -187,6 +187,10 @@ h5 {
   color: #4F4F4F;
 }
 
+a.nav-link.js-scroll-trigger {
+  font-family: 'Open Sans', sans-serif;
+}
+
  #customer-cards {
     padding: 1rem 3rem 1rem 3rem;
  }
